@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora Vigi</title>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<header>
+		<ul>
+			<li><a >Calcular Porcentagem</a></li>
+			<li><a >Calcular Idades</a></li>
+		</ul>
+	</header>
+
+	<section id="porcentagem" class="porcentagem">
+	<div class="container">
+
+		<h2>Calculadora Vigi</h2>
+		<h1>porcentagem</h1>
+
+		<div class="form">
+			<label>Dado (Quantidade)</label>
+			<input type="text" id=dado>
+			<label>Base (Valor total)</label>
+			<input type="text" id=base>
+		    <input class="btn" type="submit" onclick="capturar()" value="Calcular">
+		</div>
+
+	    <div class="resultado">
+		<label>Resultado:</label>
+	    <p id="valorDigitado"></p>
+		</div>
+
+	</div>
+	</section>
+
+	<section id ="idades" class="idade">
+	<div class="container">
+
+		<h2>Calculadora Vigi</h2>
+		<h1>idades</h1>
+
+		<div class="form">
+			<label>Data de Nascimento:</label>
+			<input type="date" id="idade" value="2020-01-01">
+		    <input class="btn" type="submit" onclick="idade()" value="Calcular">
+		    <p id="demo"></p>
+		</div>
+
+	    <div class="resultado">
+		<label>Resultado:</label>
+	    <p id="valorDigitado2"></p>
+		</div>
+
+	</div>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+</html>
