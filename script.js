@@ -45,10 +45,14 @@ function idade(ano_aniversario, mes_aniversario, dia_aniversario) {
         mes_aniversario = +x.slice(5, 7),
         dia_aniversario = +x.slice(8, 10),
 
+        quantos_meses = mes_atual - mes_aniversario;  
         quantos_anos = ano_atual - ano_aniversario;
 
-    if (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual < dia_aniversario) {
+    if (quantos_anos === 0) {
         quantos_anos--;
     }
+    return document.getElementById('valorDigitado2').innerHTML = quantos_meses + " meses";
+
+    elseif (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual < dia_aniversario)
     return document.getElementById('valorDigitado2').innerHTML = quantos_anos < 0 ? 0 : quantos_anos + " anos";
 }
